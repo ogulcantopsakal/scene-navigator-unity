@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Kormos/SceneNavigator/Editor/SceneNavigatorEditor.uss?fileID=7433441132597879392&amp;guid=e9f8d71840c394b4886183dedca0f6cf&amp;type=3#SceneNavigatorEditor" />
+    <ui:VisualElement name="main-container" style="flex-grow: 1; margin-top: 10px; margin-right: 10px; margin-bottom: 10px; margin-left: 10px;">
+        <ui:Label tabindex="-1" text="All Scenes" parse-escape-sequences="true" display-tooltip-when-elided="true" name="all-scenes-header-label" style="height: 25px; -unity-font-style: bold; -unity-text-align: upper-left; font-size: 14px;" />
+        <ui:VisualElement name="all-scenes-container" style="flex-grow: 1; flex-direction: row; align-items: flex-start; width: 100%; height: 35px; margin-top: 1px; margin-bottom: 2px; max-height: 35px;">
+            <ui:DropdownField index="-1" name="scenes-dropdown" style="-unity-font-style: normal; align-items: auto; width: 200px; margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0; height: auto; font-size: 14px; min-height: auto;" />
+            <ui:Button text="S" parse-escape-sequences="true" display-tooltip-when-elided="true" name="all-scenes-single-load-button" style="-unity-font-style: bold; width: 40px; height: 22px; font-size: 14px; margin-left: 8px; margin-right: 4px; background-image: none;" />
+            <ui:Button text="A" parse-escape-sequences="true" display-tooltip-when-elided="true" name="all-scenes-additive-load-button" style="-unity-font-style: bold; width: 40px; height: 22px; font-size: 14px;" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="all-scenes-refresh-button" text="R" style="-unity-font-style: bold; width: 40px; height: 22px; font-size: 14px; background-image: none; -unity-background-scale-mode: scale-to-fit;" />
+            <ui:Button parse-escape-sequences="true" display-tooltip-when-elided="true" name="all-scenes-preset-save-button" style="-unity-font-style: bold; width: 40px; height: 22px; font-size: 14px; background-image: url(&apos;project://database/Assets/Kormos/SceneNavigator/Sprites/ico-add.png?fileID=2800000&amp;guid=13d0f90cfde2fb3458604ad35da29213&amp;type=3#ico-add&apos;); -unity-background-scale-mode: scale-to-fit;" />
+        </ui:VisualElement>
+        <ui:Label tabindex="-1" text="Presets&#10;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="presets-label" style="height: 20px; -unity-font-style: bold; -unity-text-align: upper-left; font-size: 14px;" />
+        <ui:Label tabindex="-1" text="Empty" parse-escape-sequences="true" display-tooltip-when-elided="true" name="presets-empty-label" style="height: 25px; -unity-font-style: bold; -unity-text-align: upper-left; font-size: 13px;" />
+        <ui:VisualElement name="presets-container" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>
